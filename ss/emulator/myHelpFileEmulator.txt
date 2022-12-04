@@ -1,0 +1,1636 @@
+In memory, at index 0 (address:0) is: 4001
+returned value(that has read, we read 2 bytes): 140
+registers[REGISTER_PC] 140
+In memory, at index 280 (address:140) is: 50
+returned value(that has read, we read 1 byte)): 50
+NEW INSTRUCTION : One byte from address 140 read, val: 50
+INSTRUCTION jmp, registers[REGISTER_PC]: 141
+In memory, at index 282 (address:141) is: f0
+returned value(that has read, we read 1 byte)): f0
+In memory, at index 284 (address:142) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDesc: f0, addrMode: 0
+In memory, at index 286 (address:143) is: 5c00
+returned value(that has read, we read 2 bytes): 5c
+cnt: 1
+registers[REGISTER_PC] 5c
+In memory, at index b8 (address:5c) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 5c read, val: a0
+INSTRUCTION ldr at address 5b
+INSTRUCTION ldr/pop
+In memory, at index ba (address:5d) is: 6f
+returned value(that has read, we read 1 byte)): 6f
+In memory, at index bc (address:5e) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=6f, regD=6, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=5f
+In memory, at index be (address:5f) is: fefe
+returned value(that has read, we read 2 bytes): fefe
+registers[regD]=fefe
+cnt: 2
+registers[REGISTER_PC] 61
+In memory, at index c2 (address:61) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 61 read, val: a0
+INSTRUCTION ldr at address 60
+INSTRUCTION ldr/pop
+In memory, at index c4 (address:62) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index c6 (address:63) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=64
+In memory, at index c8 (address:64) is: 0400
+returned value(that has read, we read 2 bytes): 4
+registers[regD]=4
+cnt: 3
+registers[REGISTER_PC] 66
+In memory, at index cc (address:66) is: 10
+returned value(that has read, we read 1 byte)): 10
+NEW INSTRUCTION : One byte from address 66 read, val: 10
+INSTRUCTION int(push pc,push psw,pc<=mem[(reg[DDDD]%8)*2]), registers[REGISTER_PC]: 67
+In memory, at index ce (address:67) is: 0f
+returned value(that has read, we read 1 byte)): f
+After instruction int read, registers[REGISTER_PC: 68
+dddd1111 read: f, registers[REGISTER_PC]: hex:68, dec:104
+numD(real): 0
+push pc... 
+we adding 68 at address(stack): fefc
+insertIntoMemory --> ind: fefc, val: 68, numOfBytes: 2, val.size: 2
+i=1fdf8
+Want to insert at ind 1fdf8, address fefc
+Value to insert in memory is 68(size: 2)
+inserted: 6800
+push psw... 
+we adding  at address(stack): fefa
+insertIntoMemory --> ind: fefa, val: 0, numOfBytes: 2, val.size: 1
+i=1fdf4
+Want to insert at ind 1fdf4, address fefa
+Value to insert in memory is 0(size: 1)
+inserted: 0000
+pc<=mem[(reg[DDDD]%8)*2], reg[dddd]: 4 (registers[num] % 8) * 2: 8
+In memory, at index 10 (address:8) is: 4701
+returned value(that has read, we read 2 bytes): 147
+AFTER INSTRUCTION int: pc=147
+cnt: 4
+registers[REGISTER_PC] 147
+In memory, at index 28e (address:147) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 147 read, val: b0
+INSTRUCTION str at address 146
+INSTRUCTION str/push
+In memory, at index 290 (address:148) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 292 (address:149) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=14a
+push r... 0=4
+we adding 4 at address(stack): fef8
+insertIntoMemory --> ind: fef8, val: 4, numOfBytes: 2, val.size: 1
+i=1fdf0
+Want to insert at ind 1fdf0, address fef8
+Value to insert in memory is 4(size: 1)
+inserted: 0400
+cnt: 5
+registers[REGISTER_PC] 14a
+In memory, at index 294 (address:14a) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 14a read, val: b0
+INSTRUCTION str at address 149
+INSTRUCTION str/push
+In memory, at index 296 (address:14b) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 298 (address:14c) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=16, regD=1, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=14d
+push r... 1=0
+we adding  at address(stack): fef6
+insertIntoMemory --> ind: fef6, val: 0, numOfBytes: 2, val.size: 1
+i=1fdec
+Want to insert at ind 1fdec, address fef6
+Value to insert in memory is 0(size: 1)
+inserted: 0000
+cnt: 6
+registers[REGISTER_PC] 14d
+In memory, at index 29a (address:14d) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 14d read, val: a0
+INSTRUCTION ldr at address 14c
+INSTRUCTION ldr/pop
+In memory, at index 29c (address:14e) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 29e (address:14f) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=150
+In memory, at index 2a0 (address:150) is: cdab
+returned value(that has read, we read 2 bytes): abcd
+registers[regD]=abcd
+cnt: 7
+registers[REGISTER_PC] 152
+In memory, at index 2a4 (address:152) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 152 read, val: a0
+INSTRUCTION ldr at address 151
+INSTRUCTION ldr/pop
+In memory, at index 2a6 (address:153) is: 1f
+returned value(that has read, we read 1 byte)): 1f
+In memory, at index 2a8 (address:154) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=1f, regD=1, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=155
+In memory, at index 2aa (address:155) is: 2a01
+returned value(that has read, we read 2 bytes): 12a
+registers[regD]=12a
+cnt: 8
+registers[REGISTER_PC] 157
+In memory, at index 2ae (address:157) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 157 read, val: b0
+INSTRUCTION str at address 156
+INSTRUCTION str/push
+In memory, at index 2b0 (address:158) is: 01
+returned value(that has read, we read 1 byte)): 1
+In memory, at index 2b2 (address:159) is: 02
+returned value(that has read, we read 1 byte)): 2
+RegsDescr=1, regD=0, regS=1
+AddrMode=2, updateMode=0, addrMode=2
+registers[REGISTER_PC]=15a
+registres[regS]=12ainsertIntoMemory --> ind: 12a, val: abcd, numOfBytes: 2, val.size: 4
+Want to insert at ind 254, address 12a, val abcd
+Value to insert in memory is abcd(size: 4)
+inserted: cdab
+cnt: 9
+registers[REGISTER_PC] 15a
+In memory, at index 2b4 (address:15a) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 15a read, val: a0
+INSTRUCTION ldr at address 159
+INSTRUCTION ldr/pop
+In memory, at index 2b6 (address:15b) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 2b8 (address:15c) is: 42
+returned value(that has read, we read 1 byte)): 42
+RegsDescr=16, regD=1, regS=6
+AddrMode=42, updateMode=4, addrMode=2
+registers[REGISTER_PC]=15d
+(registers[regSrc] < 0x7fff)?0
+registers[regSrc]  > 0x7fff, registers[regSrc]:fef6
+i=1fdec
+operand=0
+registers[regD]=0
+cnt: a
+registers[REGISTER_PC] 15d
+In memory, at index 2ba (address:15d) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 15d read, val: a0
+INSTRUCTION ldr at address 15c
+INSTRUCTION ldr/pop
+In memory, at index 2bc (address:15e) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 2be (address:15f) is: 42
+returned value(that has read, we read 1 byte)): 42
+RegsDescr=6, regD=0, regS=6
+AddrMode=42, updateMode=4, addrMode=2
+registers[REGISTER_PC]=160
+(registers[regSrc] < 0x7fff)?0
+registers[regSrc]  > 0x7fff, registers[regSrc]:fef8
+i=1fdf0
+operand=4
+registers[regD]=4
+cnt: b
+registers[REGISTER_PC] 160
+In memory, at index 2c0 (address:160) is: 20
+returned value(that has read, we read 1 byte)): 20
+NEW INSTRUCTION : One byte from address 160 read, val: 20
+INSTRUCTION iret(pop psw,pop pc, registers[REGISTER_PC]: 161, registers[REGISTER_PSW]: 0, registers[REGISTER_SP]: fefa
+sp=fefa
+i=1fdf4
+In memory, at index 1fdf4 (address:fefa) is: 0000
+toRet=0
+sp=fefc
+i=1fdf8
+In memory, at index 1fdf8 (address:fefc) is: 6800
+toRet=68
+AFTER INSTRUCTION iret: pc=68, psw=0
+cnt: c
+registers[REGISTER_PC] 68
+In memory, at index d0 (address:68) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 68 read, val: a0
+INSTRUCTION ldr at address 67
+INSTRUCTION ldr/pop
+In memory, at index d2 (address:69) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index d4 (address:6a) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=6b
+In memory, at index d6 (address:6b) is: 0000
+returned value(that has read, we read 2 bytes): 0
+registers[regD]=0
+cnt: d
+registers[REGISTER_PC] 6d
+In memory, at index da (address:6d) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 6d read, val: b0
+INSTRUCTION str at address 6c
+INSTRUCTION str/push
+In memory, at index dc (address:6e) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index de (address:6f) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=70
+push r... 0=0
+we adding  at address(stack): fefc
+insertIntoMemory --> ind: fefc, val: 0, numOfBytes: 2, val.size: 1
+i=1fdf8
+Want to insert at ind 1fdf8, address fefc
+Value to insert in memory is 0(size: 1)
+inserted: 0000
+cnt: e
+registers[REGISTER_PC] 70
+In memory, at index e0 (address:70) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 70 read, val: a0
+INSTRUCTION ldr at address 6f
+INSTRUCTION ldr/pop
+In memory, at index e2 (address:71) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index e4 (address:72) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=73
+In memory, at index e6 (address:73) is: 0100
+returned value(that has read, we read 2 bytes): 1
+registers[regD]=1
+cnt: f
+registers[REGISTER_PC] 75
+In memory, at index ea (address:75) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 75 read, val: b0
+INSTRUCTION str at address 74
+INSTRUCTION str/push
+In memory, at index ec (address:76) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index ee (address:77) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=78
+push r... 0=1
+we adding 1 at address(stack): fefa
+insertIntoMemory --> ind: fefa, val: 1, numOfBytes: 2, val.size: 1
+i=1fdf4
+Want to insert at ind 1fdf4, address fefa
+Value to insert in memory is 1(size: 1)
+inserted: 0100
+cnt: 10
+registers[REGISTER_PC] 78
+In memory, at index f0 (address:78) is: 30
+returned value(that has read, we read 1 byte)): 30
+NEW INSTRUCTION : One byte from address 78 read, val: 30
+INSTRUCTION call(push pc,pc<=operand, registers[REGISTER_PC]: 79
+In memory, at index f2 (address:79) is: f0
+returned value(that has read, we read 1 byte)): f0
+In memory, at index f4 (address:7a) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDesc: f0, addrMode: 0, regS:0, updareMode: 0, addrMode: 0
+push pc... 
+we adding 7d at address(stack): fef8
+insertIntoMemory --> ind: fef8, val: 7d, numOfBytes: 2, val.size: 2
+i=1fdf0
+Want to insert at ind 1fdf0, address fef8
+Value to insert in memory is 7d(size: 2)
+inserted: 7d00
+In memory, at index f6 (address:7b) is: 1000
+returned value(that has read, we read 2 bytes): 10
+cnt: 11
+registers[REGISTER_PC] 10
+In memory, at index 20 (address:10) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 10 read, val: b0
+INSTRUCTION str at address f
+INSTRUCTION str/push
+In memory, at index 22 (address:11) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 24 (address:12) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=16, regD=1, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=13
+push r... 1=0
+we adding  at address(stack): fef6
+insertIntoMemory --> ind: fef6, val: 0, numOfBytes: 2, val.size: 1
+i=1fdec
+Want to insert at ind 1fdec, address fef6
+Value to insert in memory is 0(size: 1)
+inserted: 0000
+cnt: 12
+registers[REGISTER_PC] 13
+In memory, at index 26 (address:13) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 13 read, val: a0
+INSTRUCTION ldr at address 12
+INSTRUCTION ldr/pop
+In memory, at index 28 (address:14) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 2a (address:15) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=6, regD=0, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=16
+registers[regS]=fef6
+In memory, at index 2c (address:16) is: 0400
+returned value(that has read, we read 2 bytes): 4
+payload=4
+fromReg=fef6, fromInstr4
+address=fffffefa
+(addr < 0x7fff)?0
+i=1fdf4
+In memory, at index 1fdf4 (address:fefa) is: 0100
+toRet=1
+operand=1
+registers[regD]=1
+cnt: 13
+registers[REGISTER_PC] 18
+In memory, at index 30 (address:18) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 18 read, val: a0
+INSTRUCTION ldr at address 17
+INSTRUCTION ldr/pop
+In memory, at index 32 (address:19) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 34 (address:1a) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=16, regD=1, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=1b
+registers[regS]=fef6
+In memory, at index 36 (address:1b) is: 0600
+returned value(that has read, we read 2 bytes): 6
+payload=6
+fromReg=fef6, fromInstr6
+address=fffffefc
+(addr < 0x7fff)?0
+i=1fdf8
+In memory, at index 1fdf8 (address:fefc) is: 0000
+toRet=0
+operand=0
+registers[regD]=0
+cnt: 14
+registers[REGISTER_PC] 1d
+In memory, at index 3a (address:1d) is: 70
+returned value(that has read, we read 1 byte)): 70
+NEW INSTRUCTION : One byte from address 1d read, val: 70
+INSTRUCTION add at address e
+In memory, at index 3c (address:1e) is: 01
+returned value(that has read, we read 1 byte)): 1
+cnt: 15
+registers[REGISTER_PC] 1f
+In memory, at index 3e (address:1f) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 1f read, val: a0
+INSTRUCTION ldr at address 1e
+INSTRUCTION ldr/pop
+In memory, at index 40 (address:20) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 42 (address:21) is: 42
+returned value(that has read, we read 1 byte)): 42
+RegsDescr=16, regD=1, regS=6
+AddrMode=42, updateMode=4, addrMode=2
+registers[REGISTER_PC]=22
+(registers[regSrc] < 0x7fff)?0
+registers[regSrc]  > 0x7fff, registers[regSrc]:fef6
+i=1fdec
+operand=0
+registers[regD]=0
+cnt: 16
+registers[REGISTER_PC] 22
+In memory, at index 44 (address:22) is: 40
+returned value(that has read, we read 1 byte)): 40
+NEW INSTRUCTION : One byte from address 22 read, val: 40
+INSTRUCTION ret(pop pc-read pc from memory at address fef8)
+i=1fdf0
+In memory, at index 1fdf0 (address:fef8) is: 7d00
+toRet=7d
+AFTER INSTRUCTION ret: pc=7d, sp=fefa
+cnt: 17
+registers[REGISTER_PC] 7d
+In memory, at index fa (address:7d) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 7d read, val: b0
+INSTRUCTION str at address 7c
+INSTRUCTION str/push
+In memory, at index fc (address:7e) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index fe (address:7f) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=f, regD=0, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=80
+In memory, at index 100 (address:80) is: 2c01
+returned value(that has read, we read 2 bytes): 12c
+insertIntoMemory --> ind: 12c, val: 1, numOfBytes: 2, val.size: 1
+Want to insert at ind 258, address 12c, val 1
+Value to insert in memory is 1(size: 1)
+inserted: 0100
+cnt: 18
+registers[REGISTER_PC] 82
+In memory, at index 104 (address:82) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 82 read, val: a0
+INSTRUCTION ldr at address 81
+INSTRUCTION ldr/pop
+In memory, at index 106 (address:83) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 108 (address:84) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=85
+In memory, at index 10a (address:85) is: 0100
+returned value(that has read, we read 2 bytes): 1
+registers[regD]=1
+cnt: 19
+registers[REGISTER_PC] 87
+In memory, at index 10e (address:87) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 87 read, val: b0
+INSTRUCTION str at address 86
+INSTRUCTION str/push
+In memory, at index 110 (address:88) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 112 (address:89) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=8a
+push r... 0=1
+we adding 1 at address(stack): fef8
+insertIntoMemory --> ind: fef8, val: 1, numOfBytes: 2, val.size: 1
+i=1fdf0
+Want to insert at ind 1fdf0, address fef8
+Value to insert in memory is 1(size: 1)
+inserted: 0100
+cnt: 1a
+registers[REGISTER_PC] 8a
+In memory, at index 114 (address:8a) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 8a read, val: a0
+INSTRUCTION ldr at address 89
+INSTRUCTION ldr/pop
+In memory, at index 116 (address:8b) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 118 (address:8c) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=8d
+In memory, at index 11a (address:8d) is: 0100
+returned value(that has read, we read 2 bytes): 1
+registers[regD]=1
+cnt: 1b
+registers[REGISTER_PC] 8f
+In memory, at index 11e (address:8f) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 8f read, val: b0
+INSTRUCTION str at address 8e
+INSTRUCTION str/push
+In memory, at index 120 (address:90) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 122 (address:91) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=92
+push r... 0=1
+we adding 1 at address(stack): fef6
+insertIntoMemory --> ind: fef6, val: 1, numOfBytes: 2, val.size: 1
+i=1fdec
+Want to insert at ind 1fdec, address fef6
+Value to insert in memory is 1(size: 1)
+inserted: 0100
+cnt: 1c
+registers[REGISTER_PC] 92
+In memory, at index 124 (address:92) is: 30
+returned value(that has read, we read 1 byte)): 30
+NEW INSTRUCTION : One byte from address 92 read, val: 30
+INSTRUCTION call(push pc,pc<=operand, registers[REGISTER_PC]: 93
+In memory, at index 126 (address:93) is: f7
+returned value(that has read, we read 1 byte)): f7
+In memory, at index 128 (address:94) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDesc: f7, addrMode: 0, regS:7, updareMode: 0, addrMode: 0
+push pc... 
+we adding 97 at address(stack): fef4
+insertIntoMemory --> ind: fef4, val: 97, numOfBytes: 2, val.size: 2
+i=1fde8
+Want to insert at ind 1fde8, address fef4
+Value to insert in memory is 97(size: 2)
+inserted: 9700
+In memory, at index 12a (address:95) is: 1000
+returned value(that has read, we read 2 bytes): 10
+cnt: 1d
+registers[REGISTER_PC] 10
+In memory, at index 20 (address:10) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 10 read, val: b0
+INSTRUCTION str at address f
+INSTRUCTION str/push
+In memory, at index 22 (address:11) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 24 (address:12) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=16, regD=1, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=13
+push r... 1=0
+we adding  at address(stack): fef2
+insertIntoMemory --> ind: fef2, val: 0, numOfBytes: 2, val.size: 1
+i=1fde4
+Want to insert at ind 1fde4, address fef2
+Value to insert in memory is 0(size: 1)
+inserted: 0000
+cnt: 1e
+registers[REGISTER_PC] 13
+In memory, at index 26 (address:13) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 13 read, val: a0
+INSTRUCTION ldr at address 12
+INSTRUCTION ldr/pop
+In memory, at index 28 (address:14) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 2a (address:15) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=6, regD=0, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=16
+registers[regS]=fef2
+In memory, at index 2c (address:16) is: 0400
+returned value(that has read, we read 2 bytes): 4
+payload=4
+fromReg=fef2, fromInstr4
+address=fffffef6
+(addr < 0x7fff)?0
+i=1fdec
+In memory, at index 1fdec (address:fef6) is: 0100
+toRet=1
+operand=1
+registers[regD]=1
+cnt: 1f
+registers[REGISTER_PC] 18
+In memory, at index 30 (address:18) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 18 read, val: a0
+INSTRUCTION ldr at address 17
+INSTRUCTION ldr/pop
+In memory, at index 32 (address:19) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 34 (address:1a) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=16, regD=1, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=1b
+registers[regS]=fef2
+In memory, at index 36 (address:1b) is: 0600
+returned value(that has read, we read 2 bytes): 6
+payload=6
+fromReg=fef2, fromInstr6
+address=fffffef8
+(addr < 0x7fff)?0
+i=1fdf0
+In memory, at index 1fdf0 (address:fef8) is: 0100
+toRet=1
+operand=1
+registers[regD]=1
+cnt: 20
+registers[REGISTER_PC] 1d
+In memory, at index 3a (address:1d) is: 70
+returned value(that has read, we read 1 byte)): 70
+NEW INSTRUCTION : One byte from address 1d read, val: 70
+INSTRUCTION add at address e
+In memory, at index 3c (address:1e) is: 01
+returned value(that has read, we read 1 byte)): 1
+cnt: 21
+registers[REGISTER_PC] 1f
+In memory, at index 3e (address:1f) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 1f read, val: a0
+INSTRUCTION ldr at address 1e
+INSTRUCTION ldr/pop
+In memory, at index 40 (address:20) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 42 (address:21) is: 42
+returned value(that has read, we read 1 byte)): 42
+RegsDescr=16, regD=1, regS=6
+AddrMode=42, updateMode=4, addrMode=2
+registers[REGISTER_PC]=22
+(registers[regSrc] < 0x7fff)?0
+registers[regSrc]  > 0x7fff, registers[regSrc]:fef2
+i=1fde4
+operand=0
+registers[regD]=0
+cnt: 22
+registers[REGISTER_PC] 22
+In memory, at index 44 (address:22) is: 40
+returned value(that has read, we read 1 byte)): 40
+NEW INSTRUCTION : One byte from address 22 read, val: 40
+INSTRUCTION ret(pop pc-read pc from memory at address fef4)
+i=1fde8
+In memory, at index 1fde8 (address:fef4) is: 9700
+toRet=97
+AFTER INSTRUCTION ret: pc=97, sp=fef6
+cnt: 23
+registers[REGISTER_PC] 97
+In memory, at index 12e (address:97) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 97 read, val: b0
+INSTRUCTION str at address 96
+INSTRUCTION str/push
+In memory, at index 130 (address:98) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 132 (address:99) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=f, regD=0, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=9a
+In memory, at index 134 (address:9a) is: 2e01
+returned value(that has read, we read 2 bytes): 12e
+insertIntoMemory --> ind: 12e, val: 2, numOfBytes: 2, val.size: 1
+Want to insert at ind 25c, address 12e, val 2
+Value to insert in memory is 2(size: 1)
+inserted: 0200
+cnt: 24
+registers[REGISTER_PC] 9c
+In memory, at index 138 (address:9c) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 9c read, val: a0
+INSTRUCTION ldr at address 9b
+INSTRUCTION ldr/pop
+In memory, at index 13a (address:9d) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 13c (address:9e) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=9f
+In memory, at index 13e (address:9f) is: 0800
+returned value(that has read, we read 2 bytes): 8
+registers[regD]=8
+cnt: 25
+registers[REGISTER_PC] a1
+In memory, at index 142 (address:a1) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address a1 read, val: b0
+INSTRUCTION str at address a0
+INSTRUCTION str/push
+In memory, at index 144 (address:a2) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 146 (address:a3) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=a4
+push r... 0=8
+we adding 8 at address(stack): fef4
+insertIntoMemory --> ind: fef4, val: 8, numOfBytes: 2, val.size: 1
+i=1fde8
+Want to insert at ind 1fde8, address fef4
+Value to insert in memory is 8(size: 1)
+inserted: 0800
+cnt: 26
+registers[REGISTER_PC] a4
+In memory, at index 148 (address:a4) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address a4 read, val: a0
+INSTRUCTION ldr at address a3
+INSTRUCTION ldr/pop
+In memory, at index 14a (address:a5) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 14c (address:a6) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=a7
+In memory, at index 14e (address:a7) is: 0b00
+returned value(that has read, we read 2 bytes): b
+registers[regD]=b
+cnt: 27
+registers[REGISTER_PC] a9
+In memory, at index 152 (address:a9) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address a9 read, val: b0
+INSTRUCTION str at address a8
+INSTRUCTION str/push
+In memory, at index 154 (address:aa) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 156 (address:ab) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=ac
+push r... 0=b
+we adding b at address(stack): fef2
+insertIntoMemory --> ind: fef2, val: b, numOfBytes: 2, val.size: 1
+i=1fde4
+Want to insert at ind 1fde4, address fef2
+Value to insert in memory is b(size: 1)
+inserted: 0b00
+cnt: 28
+registers[REGISTER_PC] ac
+In memory, at index 158 (address:ac) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address ac read, val: a0
+INSTRUCTION ldr at address ab
+INSTRUCTION ldr/pop
+In memory, at index 15a (address:ad) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 15c (address:ae) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=af
+In memory, at index 15e (address:af) is: 0200
+returned value(that has read, we read 2 bytes): 2
+registers[regD]=2
+cnt: 29
+registers[REGISTER_PC] b1
+In memory, at index 162 (address:b1) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address b1 read, val: a0
+INSTRUCTION ldr at address b0
+INSTRUCTION ldr/pop
+In memory, at index 164 (address:b2) is: 1f
+returned value(that has read, we read 1 byte)): 1f
+In memory, at index 166 (address:b3) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=1f, regD=1, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=b4
+In memory, at index 168 (address:b4) is: 3801
+returned value(that has read, we read 2 bytes): 138
+registers[regD]=138
+cnt: 2a
+registers[REGISTER_PC] b6
+In memory, at index 16c (address:b6) is: 70
+returned value(that has read, we read 1 byte)): 70
+NEW INSTRUCTION : One byte from address b6 read, val: 70
+INSTRUCTION add at address 5a
+In memory, at index 16e (address:b7) is: 01
+returned value(that has read, we read 1 byte)): 1
+cnt: 2b
+registers[REGISTER_PC] b8
+In memory, at index 170 (address:b8) is: 30
+returned value(that has read, we read 1 byte)): 30
+NEW INSTRUCTION : One byte from address b8 read, val: 30
+INSTRUCTION call(push pc,pc<=operand, registers[REGISTER_PC]: b9
+In memory, at index 172 (address:b9) is: f0
+returned value(that has read, we read 1 byte)): f0
+In memory, at index 174 (address:ba) is: 02
+returned value(that has read, we read 1 byte)): 2
+RegsDesc: f0, addrMode: 2, regS:0, updareMode: 0, addrMode: 2
+push pc... 
+we adding bb at address(stack): fef0
+insertIntoMemory --> ind: fef0, val: bb, numOfBytes: 2, val.size: 2
+i=1fde0
+Want to insert at ind 1fde0, address fef0
+Value to insert in memory is bb(size: 2)
+inserted: bb00
+(registers[regSrc] < 0x7fff)?1
+In memory, at index 274 (address:13a) is: 2300
+returned value(that has read, we read 2 bytes): 23
+operand=23
+cnt: 2c
+registers[REGISTER_PC] 23
+In memory, at index 46 (address:23) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 23 read, val: b0
+INSTRUCTION str at address 22
+INSTRUCTION str/push
+In memory, at index 48 (address:24) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 4a (address:25) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=16, regD=1, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=26
+push r... 1=138
+we adding 138 at address(stack): feee
+insertIntoMemory --> ind: feee, val: 138, numOfBytes: 2, val.size: 3
+i=1fddc
+Want to insert at ind 1fddc, address feee
+Value to insert in memory is 138(size: 3)
+inserted: 3801
+cnt: 2d
+registers[REGISTER_PC] 26
+In memory, at index 4c (address:26) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 26 read, val: a0
+INSTRUCTION ldr at address 25
+INSTRUCTION ldr/pop
+In memory, at index 4e (address:27) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 50 (address:28) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=6, regD=0, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=29
+registers[regS]=feee
+In memory, at index 52 (address:29) is: 0400
+returned value(that has read, we read 2 bytes): 4
+payload=4
+fromReg=feee, fromInstr4
+address=fffffef2
+(addr < 0x7fff)?0
+i=1fde4
+In memory, at index 1fde4 (address:fef2) is: 0b00
+toRet=b
+operand=b
+registers[regD]=b
+cnt: 2e
+registers[REGISTER_PC] 2b
+In memory, at index 56 (address:2b) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 2b read, val: a0
+INSTRUCTION ldr at address 2a
+INSTRUCTION ldr/pop
+In memory, at index 58 (address:2c) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 5a (address:2d) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=16, regD=1, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=2e
+registers[regS]=feee
+In memory, at index 5c (address:2e) is: 0600
+returned value(that has read, we read 2 bytes): 6
+payload=6
+fromReg=feee, fromInstr6
+address=fffffef4
+(addr < 0x7fff)?0
+i=1fde8
+In memory, at index 1fde8 (address:fef4) is: 0800
+toRet=8
+operand=8
+registers[regD]=8
+cnt: 2f
+registers[REGISTER_PC] 30
+In memory, at index 60 (address:30) is: 71
+returned value(that has read, we read 1 byte)): 71
+NEW INSTRUCTION : One byte from address 30 read, val: 71
+INSTRUCTION sub at address 17
+In memory, at index 62 (address:31) is: 01
+returned value(that has read, we read 1 byte)): 1
+cnt: 30
+registers[REGISTER_PC] 32
+In memory, at index 64 (address:32) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 32 read, val: a0
+INSTRUCTION ldr at address 31
+INSTRUCTION ldr/pop
+In memory, at index 66 (address:33) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 68 (address:34) is: 42
+returned value(that has read, we read 1 byte)): 42
+RegsDescr=16, regD=1, regS=6
+AddrMode=42, updateMode=4, addrMode=2
+registers[REGISTER_PC]=35
+(registers[regSrc] < 0x7fff)?0
+registers[regSrc]  > 0x7fff, registers[regSrc]:feee
+i=1fddc
+operand=138
+registers[regD]=138
+cnt: 31
+registers[REGISTER_PC] 35
+In memory, at index 6a (address:35) is: 40
+returned value(that has read, we read 1 byte)): 40
+NEW INSTRUCTION : One byte from address 35 read, val: 40
+INSTRUCTION ret(pop pc-read pc from memory at address fef0)
+i=1fde0
+In memory, at index 1fde0 (address:fef0) is: bb00
+toRet=bb
+AFTER INSTRUCTION ret: pc=bb, sp=fef2
+cnt: 32
+registers[REGISTER_PC] bb
+In memory, at index 176 (address:bb) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address bb read, val: b0
+INSTRUCTION str at address ba
+INSTRUCTION str/push
+In memory, at index 178 (address:bc) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 17a (address:bd) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=f, regD=0, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=be
+In memory, at index 17c (address:be) is: 3001
+returned value(that has read, we read 2 bytes): 130
+insertIntoMemory --> ind: 130, val: 3, numOfBytes: 2, val.size: 1
+Want to insert at ind 260, address 130, val 3
+Value to insert in memory is 3(size: 1)
+inserted: 0300
+cnt: 33
+registers[REGISTER_PC] c0
+In memory, at index 180 (address:c0) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address c0 read, val: a0
+INSTRUCTION ldr at address bf
+INSTRUCTION ldr/pop
+In memory, at index 182 (address:c1) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 184 (address:c2) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=c3
+In memory, at index 186 (address:c3) is: 0200
+returned value(that has read, we read 2 bytes): 2
+registers[regD]=2
+cnt: 34
+registers[REGISTER_PC] c5
+In memory, at index 18a (address:c5) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address c5 read, val: b0
+INSTRUCTION str at address c4
+INSTRUCTION str/push
+In memory, at index 18c (address:c6) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 18e (address:c7) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=c8
+push r... 0=2
+we adding 2 at address(stack): fef0
+insertIntoMemory --> ind: fef0, val: 2, numOfBytes: 2, val.size: 1
+i=1fde0
+Want to insert at ind 1fde0, address fef0
+Value to insert in memory is 2(size: 1)
+inserted: 0200
+cnt: 35
+registers[REGISTER_PC] c8
+In memory, at index 190 (address:c8) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address c8 read, val: a0
+INSTRUCTION ldr at address c7
+INSTRUCTION ldr/pop
+In memory, at index 192 (address:c9) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 194 (address:ca) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=cb
+In memory, at index 196 (address:cb) is: 0200
+returned value(that has read, we read 2 bytes): 2
+registers[regD]=2
+cnt: 36
+registers[REGISTER_PC] cd
+In memory, at index 19a (address:cd) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address cd read, val: b0
+INSTRUCTION str at address cc
+INSTRUCTION str/push
+In memory, at index 19c (address:ce) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 19e (address:cf) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=d0
+push r... 0=2
+we adding 2 at address(stack): feee
+insertIntoMemory --> ind: feee, val: 2, numOfBytes: 2, val.size: 1
+i=1fddc
+Want to insert at ind 1fddc, address feee
+Value to insert in memory is 2(size: 1)
+inserted: 0200
+cnt: 37
+registers[REGISTER_PC] d0
+In memory, at index 1a0 (address:d0) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address d0 read, val: a0
+INSTRUCTION ldr at address cf
+INSTRUCTION ldr/pop
+In memory, at index 1a2 (address:d1) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 1a4 (address:d2) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=d3
+In memory, at index 1a6 (address:d3) is: 0400
+returned value(that has read, we read 2 bytes): 4
+registers[regD]=4
+cnt: 38
+registers[REGISTER_PC] d5
+In memory, at index 1aa (address:d5) is: 30
+returned value(that has read, we read 1 byte)): 30
+NEW INSTRUCTION : One byte from address d5 read, val: 30
+INSTRUCTION call(push pc,pc<=operand, registers[REGISTER_PC]: d6
+In memory, at index 1ac (address:d6) is: f0
+returned value(that has read, we read 1 byte)): f0
+In memory, at index 1ae (address:d7) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDesc: f0, addrMode: 3, regS:0, updareMode: 0, addrMode: 3
+push pc... 
+we adding da at address(stack): feec
+insertIntoMemory --> ind: feec, val: da, numOfBytes: 2, val.size: 2
+i=1fdd8
+Want to insert at ind 1fdd8, address feec
+Value to insert in memory is da(size: 2)
+inserted: da00
+registers[regS]=4
+In memory, at index 1b0 (address:d8) is: 3801
+returned value(that has read, we read 2 bytes): 138
+payload=138
+fromReg=4, fromInstr138
+address=13c
+(addr < 0x7fff)?1
+In memory, at index 278 (address:13c) is: 3600
+returned value(that has read, we read 2 bytes): 36
+operand=36
+cnt: 39
+registers[REGISTER_PC] 36
+In memory, at index 6c (address:36) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 36 read, val: b0
+INSTRUCTION str at address 35
+INSTRUCTION str/push
+In memory, at index 6e (address:37) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 70 (address:38) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=16, regD=1, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=39
+push r... 1=138
+we adding 138 at address(stack): feea
+insertIntoMemory --> ind: feea, val: 138, numOfBytes: 2, val.size: 3
+i=1fdd4
+Want to insert at ind 1fdd4, address feea
+Value to insert in memory is 138(size: 3)
+inserted: 3801
+cnt: 3a
+registers[REGISTER_PC] 39
+In memory, at index 72 (address:39) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 39 read, val: a0
+INSTRUCTION ldr at address 38
+INSTRUCTION ldr/pop
+In memory, at index 74 (address:3a) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 76 (address:3b) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=6, regD=0, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=3c
+registers[regS]=feea
+In memory, at index 78 (address:3c) is: 0400
+returned value(that has read, we read 2 bytes): 4
+payload=4
+fromReg=feea, fromInstr4
+address=fffffeee
+(addr < 0x7fff)?0
+i=1fddc
+In memory, at index 1fddc (address:feee) is: 0200
+toRet=2
+operand=2
+registers[regD]=2
+cnt: 3b
+registers[REGISTER_PC] 3e
+In memory, at index 7c (address:3e) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 3e read, val: a0
+INSTRUCTION ldr at address 3d
+INSTRUCTION ldr/pop
+In memory, at index 7e (address:3f) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 80 (address:40) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=16, regD=1, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=41
+registers[regS]=feea
+In memory, at index 82 (address:41) is: 0600
+returned value(that has read, we read 2 bytes): 6
+payload=6
+fromReg=feea, fromInstr6
+address=fffffef0
+(addr < 0x7fff)?0
+i=1fde0
+In memory, at index 1fde0 (address:fef0) is: 0200
+toRet=2
+operand=2
+registers[regD]=2
+cnt: 3c
+registers[REGISTER_PC] 43
+In memory, at index 86 (address:43) is: 72
+returned value(that has read, we read 1 byte)): 72
+NEW INSTRUCTION : One byte from address 43 read, val: 72
+INSTRUCTION mul at address 21
+In memory, at index 88 (address:44) is: 01
+returned value(that has read, we read 1 byte)): 1
+cnt: 3d
+registers[REGISTER_PC] 45
+In memory, at index 8a (address:45) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 45 read, val: a0
+INSTRUCTION ldr at address 44
+INSTRUCTION ldr/pop
+In memory, at index 8c (address:46) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 8e (address:47) is: 42
+returned value(that has read, we read 1 byte)): 42
+RegsDescr=16, regD=1, regS=6
+AddrMode=42, updateMode=4, addrMode=2
+registers[REGISTER_PC]=48
+(registers[regSrc] < 0x7fff)?0
+registers[regSrc]  > 0x7fff, registers[regSrc]:feea
+i=1fdd4
+operand=138
+registers[regD]=138
+cnt: 3e
+registers[REGISTER_PC] 48
+In memory, at index 90 (address:48) is: 40
+returned value(that has read, we read 1 byte)): 40
+NEW INSTRUCTION : One byte from address 48 read, val: 40
+INSTRUCTION ret(pop pc-read pc from memory at address feec)
+i=1fdd8
+In memory, at index 1fdd8 (address:feec) is: da00
+toRet=da
+AFTER INSTRUCTION ret: pc=da, sp=feee
+cnt: 3f
+registers[REGISTER_PC] da
+In memory, at index 1b4 (address:da) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address da read, val: b0
+INSTRUCTION str at address d9
+INSTRUCTION str/push
+In memory, at index 1b6 (address:db) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 1b8 (address:dc) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=f, regD=0, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=dd
+In memory, at index 1ba (address:dd) is: 3201
+returned value(that has read, we read 2 bytes): 132
+insertIntoMemory --> ind: 132, val: 4, numOfBytes: 2, val.size: 1
+Want to insert at ind 264, address 132, val 4
+Value to insert in memory is 4(size: 1)
+inserted: 0400
+cnt: 40
+registers[REGISTER_PC] df
+In memory, at index 1be (address:df) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address df read, val: a0
+INSTRUCTION ldr at address de
+INSTRUCTION ldr/pop
+In memory, at index 1c0 (address:e0) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 1c2 (address:e1) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=e2
+In memory, at index 1c4 (address:e2) is: 0500
+returned value(that has read, we read 2 bytes): 5
+registers[regD]=5
+cnt: 41
+registers[REGISTER_PC] e4
+In memory, at index 1c8 (address:e4) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address e4 read, val: b0
+INSTRUCTION str at address e3
+INSTRUCTION str/push
+In memory, at index 1ca (address:e5) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 1cc (address:e6) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=e7
+push r... 0=5
+we adding 5 at address(stack): feec
+insertIntoMemory --> ind: feec, val: 5, numOfBytes: 2, val.size: 1
+i=1fdd8
+Want to insert at ind 1fdd8, address feec
+Value to insert in memory is 5(size: 1)
+inserted: 0500
+cnt: 42
+registers[REGISTER_PC] e7
+In memory, at index 1ce (address:e7) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address e7 read, val: a0
+INSTRUCTION ldr at address e6
+INSTRUCTION ldr/pop
+In memory, at index 1d0 (address:e8) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 1d2 (address:e9) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=ea
+In memory, at index 1d4 (address:ea) is: 1900
+returned value(that has read, we read 2 bytes): 19
+registers[regD]=19
+cnt: 43
+registers[REGISTER_PC] ec
+In memory, at index 1d8 (address:ec) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address ec read, val: b0
+INSTRUCTION str at address eb
+INSTRUCTION str/push
+In memory, at index 1da (address:ed) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 1dc (address:ee) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=6, regD=0, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=ef
+push r... 0=19
+we adding 19 at address(stack): feea
+insertIntoMemory --> ind: feea, val: 19, numOfBytes: 2, val.size: 2
+i=1fdd4
+Want to insert at ind 1fdd4, address feea
+Value to insert in memory is 19(size: 2)
+inserted: 1900
+cnt: 44
+registers[REGISTER_PC] ef
+In memory, at index 1de (address:ef) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address ef read, val: a0
+INSTRUCTION ldr at address ee
+INSTRUCTION ldr/pop
+In memory, at index 1e0 (address:f0) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 1e2 (address:f1) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=f, regD=0, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=f2
+In memory, at index 1e4 (address:f2) is: 0600
+returned value(that has read, we read 2 bytes): 6
+registers[regD]=6
+cnt: 45
+registers[REGISTER_PC] f4
+In memory, at index 1e8 (address:f4) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address f4 read, val: a0
+INSTRUCTION ldr at address f3
+INSTRUCTION ldr/pop
+In memory, at index 1ea (address:f5) is: 1f
+returned value(that has read, we read 1 byte)): 1f
+In memory, at index 1ec (address:f6) is: 00
+returned value(that has read, we read 1 byte)): 0
+RegsDescr=1f, regD=1, regS=f
+AddrMode=0, updateMode=0, addrMode=0
+registers[REGISTER_PC]=f7
+In memory, at index 1ee (address:f7) is: 3801
+returned value(that has read, we read 2 bytes): 138
+registers[regD]=138
+cnt: 46
+registers[REGISTER_PC] f9
+In memory, at index 1f2 (address:f9) is: 70
+returned value(that has read, we read 1 byte)): 70
+NEW INSTRUCTION : One byte from address f9 read, val: 70
+INSTRUCTION add at address 7c
+In memory, at index 1f4 (address:fa) is: 01
+returned value(that has read, we read 1 byte)): 1
+cnt: 47
+registers[REGISTER_PC] fb
+In memory, at index 1f6 (address:fb) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address fb read, val: a0
+INSTRUCTION ldr at address fa
+INSTRUCTION ldr/pop
+In memory, at index 1f8 (address:fc) is: 00
+returned value(that has read, we read 1 byte)): 0
+In memory, at index 1fa (address:fd) is: 02
+returned value(that has read, we read 1 byte)): 2
+RegsDescr=0, regD=0, regS=0
+AddrMode=2, updateMode=0, addrMode=2
+registers[REGISTER_PC]=fe
+(registers[regSrc] < 0x7fff)?1
+In memory, at index 27c (address:13e) is: 4900
+returned value(that has read, we read 2 bytes): 49
+operand=49
+registers[regD]=49
+cnt: 48
+registers[REGISTER_PC] fe
+In memory, at index 1fc (address:fe) is: 30
+returned value(that has read, we read 1 byte)): 30
+NEW INSTRUCTION : One byte from address fe read, val: 30
+INSTRUCTION call(push pc,pc<=operand, registers[REGISTER_PC]: ff
+In memory, at index 1fe (address:ff) is: f0
+returned value(that has read, we read 1 byte)): f0
+In memory, at index 200 (address:100) is: 01
+returned value(that has read, we read 1 byte)): 1
+RegsDesc: f0, addrMode: 1, regS:0, updareMode: 0, addrMode: 1
+push pc... 
+we adding 101 at address(stack): fee8
+insertIntoMemory --> ind: fee8, val: 101, numOfBytes: 2, val.size: 3
+i=1fdd0
+Want to insert at ind 1fdd0, address fee8
+Value to insert in memory is 101(size: 3)
+inserted: 0101
+cnt: 49
+registers[REGISTER_PC] 49
+In memory, at index 92 (address:49) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 49 read, val: b0
+INSTRUCTION str at address 48
+INSTRUCTION str/push
+In memory, at index 94 (address:4a) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index 96 (address:4b) is: 12
+returned value(that has read, we read 1 byte)): 12
+RegsDescr=16, regD=1, regS=6
+AddrMode=12, updateMode=1, addrMode=2
+registers[REGISTER_PC]=4c
+push r... 1=138
+we adding 138 at address(stack): fee6
+insertIntoMemory --> ind: fee6, val: 138, numOfBytes: 2, val.size: 3
+i=1fdcc
+Want to insert at ind 1fdcc, address fee6
+Value to insert in memory is 138(size: 3)
+inserted: 3801
+cnt: 4a
+registers[REGISTER_PC] 4c
+In memory, at index 98 (address:4c) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 4c read, val: a0
+INSTRUCTION ldr at address 4b
+INSTRUCTION ldr/pop
+In memory, at index 9a (address:4d) is: 06
+returned value(that has read, we read 1 byte)): 6
+In memory, at index 9c (address:4e) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=6, regD=0, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=4f
+registers[regS]=fee6
+In memory, at index 9e (address:4f) is: 0400
+returned value(that has read, we read 2 bytes): 4
+payload=4
+fromReg=fee6, fromInstr4
+address=fffffeea
+(addr < 0x7fff)?0
+i=1fdd4
+In memory, at index 1fdd4 (address:feea) is: 1900
+toRet=19
+operand=19
+registers[regD]=19
+cnt: 4b
+registers[REGISTER_PC] 51
+In memory, at index a2 (address:51) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 51 read, val: a0
+INSTRUCTION ldr at address 50
+INSTRUCTION ldr/pop
+In memory, at index a4 (address:52) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index a6 (address:53) is: 03
+returned value(that has read, we read 1 byte)): 3
+RegsDescr=16, regD=1, regS=6
+AddrMode=3, updateMode=0, addrMode=3
+registers[REGISTER_PC]=54
+registers[regS]=fee6
+In memory, at index a8 (address:54) is: 0600
+returned value(that has read, we read 2 bytes): 6
+payload=6
+fromReg=fee6, fromInstr6
+address=fffffeec
+(addr < 0x7fff)?0
+i=1fdd8
+In memory, at index 1fdd8 (address:feec) is: 0500
+toRet=5
+operand=5
+registers[regD]=5
+cnt: 4c
+registers[REGISTER_PC] 56
+In memory, at index ac (address:56) is: 73
+returned value(that has read, we read 1 byte)): 73
+NEW INSTRUCTION : One byte from address 56 read, val: 73
+INSTRUCTION div at address 2a
+In memory, at index ae (address:57) is: 01
+returned value(that has read, we read 1 byte)): 1
+cnt: 4d
+registers[REGISTER_PC] 58
+In memory, at index b0 (address:58) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 58 read, val: a0
+INSTRUCTION ldr at address 57
+INSTRUCTION ldr/pop
+In memory, at index b2 (address:59) is: 16
+returned value(that has read, we read 1 byte)): 16
+In memory, at index b4 (address:5a) is: 42
+returned value(that has read, we read 1 byte)): 42
+RegsDescr=16, regD=1, regS=6
+AddrMode=42, updateMode=4, addrMode=2
+registers[REGISTER_PC]=5b
+(registers[regSrc] < 0x7fff)?0
+registers[regSrc]  > 0x7fff, registers[regSrc]:fee6
+i=1fdcc
+operand=138
+registers[regD]=138
+cnt: 4e
+registers[REGISTER_PC] 5b
+In memory, at index b6 (address:5b) is: 40
+returned value(that has read, we read 1 byte)): 40
+NEW INSTRUCTION : One byte from address 5b read, val: 40
+INSTRUCTION ret(pop pc-read pc from memory at address fee8)
+i=1fdd0
+In memory, at index 1fdd0 (address:fee8) is: 0101
+toRet=101
+AFTER INSTRUCTION ret: pc=101, sp=feea
+cnt: 4f
+registers[REGISTER_PC] 101
+In memory, at index 202 (address:101) is: b0
+returned value(that has read, we read 1 byte)): b0
+NEW INSTRUCTION : One byte from address 101 read, val: b0
+INSTRUCTION str at address 100
+INSTRUCTION str/push
+In memory, at index 204 (address:102) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 206 (address:103) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=f, regD=0, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=104
+In memory, at index 208 (address:104) is: 3401
+returned value(that has read, we read 2 bytes): 134
+insertIntoMemory --> ind: 134, val: 5, numOfBytes: 2, val.size: 1
+Want to insert at ind 268, address 134, val 5
+Value to insert in memory is 5(size: 1)
+inserted: 0500
+cnt: 50
+registers[REGISTER_PC] 106
+In memory, at index 20c (address:106) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 106 read, val: a0
+INSTRUCTION ldr at address 105
+INSTRUCTION ldr/pop
+In memory, at index 20e (address:107) is: 0f
+returned value(that has read, we read 1 byte)): f
+In memory, at index 210 (address:108) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=f, regD=0, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=109
+In memory, at index 212 (address:109) is: 2a01
+returned value(that has read, we read 2 bytes): 12a
+(addrOfOperand < 0x7fff)?1
+In memory, at index 254 (address:12a) is: cdab
+returned value(that has read, we read 2 bytes): abcd
+operand=abcd
+registers[regD]=abcd
+cnt: 51
+registers[REGISTER_PC] 10b
+In memory, at index 216 (address:10b) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 10b read, val: a0
+INSTRUCTION ldr at address 10a
+INSTRUCTION ldr/pop
+In memory, at index 218 (address:10c) is: 1f
+returned value(that has read, we read 1 byte)): 1f
+In memory, at index 21a (address:10d) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=1f, regD=1, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=10e
+In memory, at index 21c (address:10e) is: 2c01
+returned value(that has read, we read 2 bytes): 12c
+(addrOfOperand < 0x7fff)?1
+In memory, at index 258 (address:12c) is: 0100
+returned value(that has read, we read 2 bytes): 1
+operand=1
+registers[regD]=1
+cnt: 52
+registers[REGISTER_PC] 110
+In memory, at index 220 (address:110) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 110 read, val: a0
+INSTRUCTION ldr at address 10f
+INSTRUCTION ldr/pop
+In memory, at index 222 (address:111) is: 2f
+returned value(that has read, we read 1 byte)): 2f
+In memory, at index 224 (address:112) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=2f, regD=2, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=113
+In memory, at index 226 (address:113) is: 2e01
+returned value(that has read, we read 2 bytes): 12e
+(addrOfOperand < 0x7fff)?1
+In memory, at index 25c (address:12e) is: 0200
+returned value(that has read, we read 2 bytes): 2
+operand=2
+registers[regD]=2
+cnt: 53
+registers[REGISTER_PC] 115
+In memory, at index 22a (address:115) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 115 read, val: a0
+INSTRUCTION ldr at address 114
+INSTRUCTION ldr/pop
+In memory, at index 22c (address:116) is: 3f
+returned value(that has read, we read 1 byte)): 3f
+In memory, at index 22e (address:117) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=3f, regD=3, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=118
+In memory, at index 230 (address:118) is: 3001
+returned value(that has read, we read 2 bytes): 130
+(addrOfOperand < 0x7fff)?1
+In memory, at index 260 (address:130) is: 0300
+returned value(that has read, we read 2 bytes): 3
+operand=3
+registers[regD]=3
+cnt: 54
+registers[REGISTER_PC] 11a
+In memory, at index 234 (address:11a) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 11a read, val: a0
+INSTRUCTION ldr at address 119
+INSTRUCTION ldr/pop
+In memory, at index 236 (address:11b) is: 4f
+returned value(that has read, we read 1 byte)): 4f
+In memory, at index 238 (address:11c) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=4f, regD=4, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=11d
+In memory, at index 23a (address:11d) is: 3201
+returned value(that has read, we read 2 bytes): 132
+(addrOfOperand < 0x7fff)?1
+In memory, at index 264 (address:132) is: 0400
+returned value(that has read, we read 2 bytes): 4
+operand=4
+registers[regD]=4
+cnt: 55
+registers[REGISTER_PC] 11f
+In memory, at index 23e (address:11f) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 11f read, val: a0
+INSTRUCTION ldr at address 11e
+INSTRUCTION ldr/pop
+In memory, at index 240 (address:120) is: 5f
+returned value(that has read, we read 1 byte)): 5f
+In memory, at index 242 (address:121) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=5f, regD=5, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=122
+In memory, at index 244 (address:122) is: 3401
+returned value(that has read, we read 2 bytes): 134
+(addrOfOperand < 0x7fff)?1
+In memory, at index 268 (address:134) is: 0500
+returned value(that has read, we read 2 bytes): 5
+operand=5
+registers[regD]=5
+cnt: 56
+registers[REGISTER_PC] 124
+In memory, at index 248 (address:124) is: a0
+returned value(that has read, we read 1 byte)): a0
+NEW INSTRUCTION : One byte from address 124 read, val: a0
+INSTRUCTION ldr at address 123
+INSTRUCTION ldr/pop
+In memory, at index 24a (address:125) is: 6f
+returned value(that has read, we read 1 byte)): 6f
+In memory, at index 24c (address:126) is: 04
+returned value(that has read, we read 1 byte)): 4
+RegsDescr=6f, regD=6, regS=f
+AddrMode=4, updateMode=0, addrMode=4
+registers[REGISTER_PC]=127
+In memory, at index 24e (address:127) is: 3601
+returned value(that has read, we read 2 bytes): 136
+(addrOfOperand < 0x7fff)?1
+In memory, at index 26c (address:136) is: 0000
+returned value(that has read, we read 2 bytes): 0
+operand=0
+registers[regD]=0
+cnt: 57
+registers[REGISTER_PC] 129
+In memory, at index 252 (address:129) is: 00
+returned value(that has read, we read 1 byte)): 0
+NEW INSTRUCTION : One byte from address 129 read, val: 0
+INSTRUCTION halt at address 94
+cnt: 58

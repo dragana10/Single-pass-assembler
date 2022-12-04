@@ -1,0 +1,17 @@
+Symbol table
+|ID                  |NAME                |VALUE               |SECTION             |BINDING             |
+|0                   |absolute            |0                   |absolute            |local               |
+|1                   |no section          |0                   |no section          |local               |
+|2                   |isr                 |0                   |isr                 |local               |
+|3                   |isr_reset           |0                   |isr                 |global              |
+|4                   |my_start            |0                   |                    |local               |
+
+Relocation records
+|Section              Offset              |Type                |Name                |Addend              |
+|isr                 |4                   |R_16                |my_start            |0                   |
+
+Section content
+#absolute (0)
+#no section (0)
+#isr (5)
+0000: 50 f0 00 00 00 

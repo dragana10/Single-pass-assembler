@@ -1,0 +1,154 @@
+NOTES
+
+
+line 1 read '# file: isr_user0.s'
+
+line 2 read ''
+
+line 3 read '.extern value0'
+after directive is: #value0#
+after remove_spaces_from_string: value0
+
+line 4 read ''
+
+line 5 read '.section isr'
+after directive is: #isr#
+
+line 6 read '# prekidna rutina za slobodni ulaz 0'
+
+line 7 read '.global isr_user0'
+after directive is: #isr_user0#
+
+
+line 8 read 'isr_user0:'
+line 8 is only label (isr_user0:)
+label is: isr_user0
+LABEL IS isr_user0
+symbol: absolute is in section: absolute, curr section is: isr
+symbol: no section is in section: no section, curr section is: isr
+symbol: value0 is in section: no section, curr section is: isr
+symbol: isr is in section: isr, curr section is: isr
+symbol: isr_user0 is in section: isr, curr section is: isr
+
+line 9 read '  push r0'
+name of instruction (m.str(4)) is push
+name of instruction (m.str(4)) is push
+INSTR #10#
+THIS IS PUSH INSTRUCTION
+push r0
+Num of reg in 1-byte instr is: 0
+line 10 read '  push r1'
+name of instruction (m.str(4)) is push
+name of instruction (m.str(4)) is push
+INSTR #10#
+THIS IS PUSH INSTRUCTION
+push r1
+Num of reg in 1-byte instr is: 1
+line 11 read '  ldr r0, $0xABCD'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 0
+regD in ldr/str regD is: 0
+Operand in ldr/str instr is: 0xABCD
+numerical value from string '0xABCD' is: abcd (43981)
+Literal in ldr/str regD, $lit is: 43981
+regD, $literal: 0 43981
+Ldr/str regD, literal; to_insert should be 1010(1011) 0000 DDDD 1111 0000 0100 HHHH HHHH LLLL LLLL, and it is: f00abcd
+
+line c read '  ldr r1, $value0'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 1
+regD in ldr/str regD is: 1
+Operand in ldr/str instr is: value0
+Symbol in ldr/str regD, $sym is: value0
+regD, sym: 1 value0
+Ldr/str regD, $sym; to_insert should be 1010(1011) 0000 DDDD 1111 0000 0000 HHHH HHHH LLLL LLLL, and it is: 1f000000
+
+line d read '  str r0, [r1]'
+name of instruction (m.str(4)) is str
+name of instruction (m.str(4)) is str
+INSTR #26#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 0
+regD in ldr/str regD is: 0
+Operand in ldr/str instr is: [r1]
+push r1
+Num of reg in 1-byte instr is: 1Num of second reg in 'ldr/str regD, [regS]' instr is: 1
+regD, [regS]: 0 1
+Ldr/str regD, [regX]; to_insert should be 1010(1011) 0000 DDDD SSSS 0000 0010, and it is: 102
+
+line e read '  pop r1'
+name of instruction (m.str(4)) is pop
+name of instruction (m.str(4)) is pop
+INSTR #11#
+THIS IS PUSH INSTRUCTION
+pop r1
+Num of reg in 1-byte instr is: 1
+line f read '  pop r0'
+name of instruction (m.str(4)) is pop
+name of instruction (m.str(4)) is pop
+INSTR #11#
+THIS IS PUSH INSTRUCTION
+pop r0
+Num of reg in 1-byte instr is: 0
+line 10 read '  iret'
+INSTR #3#
+
+line 11 read '  '
+
+line 12 read '.end'
+
+line 13 read ''
+EOF at line 
+U BACKPATCHING-U SMO
+pravim relokacione zapise za simbol: value0
+section: isr, offeset: e, type: 0
+R_16 && undefined symbol 
+EOF at line 13
+
+                                             SIMBOL TABLE
+
+*********************************************************************************************************
+|ID                  NAME                |VALUE               |SECTION             |BINDING             |
+
+|0                   |absolute            |0                   |absolute            |local               |
+
+|1                   |no section          |0                   |no section          |local               |
+
+|2                   |value0              |0                   |no section          |global              |
+
+|3                   |isr                 |0                   |isr                 |local               |
+
+|4                   |isr_user0           |0                   |isr                 |global              |
+
+
+*********************************************************************************************************
+#absolute (0)
+
+#no section (0)
+
+#isr (26)
+0000: b0 06 12 b0 16 12 a0 0f 
+0008: 00 ab cd a0 1f 00 00 00 
+0010: b0 01 02 a0 16 42 a0 06 
+0018: 42 20 
+
+
+                                       RELOCATION RECORDS
+
+*********************************************************************************************************
+|Section             Offset              |Type                |Name                |Addend              |
+
+pisem relokacioni zapis
+|isr                 |e                   |R_16                |value0              |0                   |
+
+
+*********************************************************************************************************

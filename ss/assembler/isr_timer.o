@@ -1,0 +1,12 @@
+Symbol table
+|ID                  |NAME                |VALUE               |SECTION             |BINDING             |
+|0                   |absolute            |0                   |absolute            |local               |
+|1                   |no section          |0                   |no section          |local               |
+|2                   |isr                 |0                   |isr                 |local               |
+|3                   |isr_timer           |0                   |isr                 |global              |
+
+Section content
+#absolute (0)
+#no section (0)
+#isr (1)
+0000: 20 

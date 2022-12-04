@@ -1,0 +1,17 @@
+HELP FILE
+WE ARE IN MAPSECTION
+List of all sections has 0 members: 
+
+Before mapping sections:
+After mapping sections:
+
+
+After mapping symbols:
+
+We went out from mapping sections
+List of symbols to add: 
+
+New symbol table(after resolving symbols): 
+Data in output file before resolving relocation records: 
+
+END

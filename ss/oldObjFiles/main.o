@@ -1,0 +1,78 @@
+Symbol table
+|ID                  |NAME                |VALUE               |SECTION             |BINDING             |
+|0                   |absolute            |0                   |absolute            |local               |
+|1                   |no section          |0                   |no section          |local               |
+|2                   |mathAdd             |0                   |no section          |global              |
+|3                   |mathSub             |0                   |no section          |global              |
+|4                   |mathMul             |0                   |no section          |global              |
+|5                   |mathDiv             |0                   |no section          |global              |
+|6                   |my_start            |0                   |my_code             |global              |
+|7                   |value0              |0                   |my_data             |global              |
+|8                   |value1              |2                   |my_data             |global              |
+|9                   |value2              |4                   |my_data             |global              |
+|a                   |value3              |6                   |my_data             |global              |
+|b                   |value4              |8                   |my_data             |global              |
+|c                   |value5              |a                   |my_data             |global              |
+|d                   |value6              |c                   |my_data             |global              |
+|e                   |my_code             |0                   |my_code             |local               |
+|f                   |destinations        |e                   |my_data             |local               |
+|10                  |my_data             |0                   |my_data             |local               |
+
+Relocation records
+|Section              Offset              |Type                |Name                |Addend              |
+|my_code             |39                  |R_16PC              |mathAdd             |fffffffe            |
+|my_code             |1f                  |R_16                |mathAdd             |0                   |
+|my_code             |ad                  |R_16                |value0              |0                   |
+|my_code             |b2                  |R_16                |value1              |0                   |
+|my_code             |24                  |R_16                |value1              |0                   |
+|my_code             |b7                  |R_16                |value2              |0                   |
+|my_code             |3e                  |R_16                |value2              |0                   |
+|my_code             |bc                  |R_16                |value3              |0                   |
+|my_code             |62                  |R_16                |value3              |0                   |
+|my_code             |c1                  |R_16                |value4              |0                   |
+|my_code             |81                  |R_16                |value4              |0                   |
+|my_code             |c6                  |R_16                |value5              |0                   |
+|my_code             |a8                  |R_16                |value5              |0                   |
+|my_code             |cb                  |R_16                |value6              |0                   |
+|my_code             |9b                  |R_16                |my_data             |e                   |
+|my_code             |7c                  |R_16                |my_data             |e                   |
+|my_code             |58                  |R_16                |my_data             |e                   |
+|my_data             |e                   |R_16                |mathAdd             |0                   |
+|my_data             |10                  |R_16                |mathSub             |0                   |
+|my_data             |12                  |R_16                |mathMul             |0                   |
+|my_data             |14                  |R_16                |mathDiv             |0                   |
+
+Section content
+#absolute (0)
+#no section (0)
+#my_code (206)
+0000: a0 6f 00 fe fe a0 0f 00 
+0008: 00 04 10 0f a0 0f 00 00 
+0010: 00 b0 06 12 a0 0f 00 00 
+0018: 01 b0 06 12 30 f0 00 00 
+0020: 00 b0 0f 04 00 00 a0 0f 
+0028: 00 00 01 b0 06 12 a0 0f 
+0030: 00 00 01 b0 06 12 30 f7 
+0038: 05 00 00 b0 0f 04 00 00 
+0040: a0 0f 00 00 08 b0 06 12 
+0048: a0 0f 00 00 0b b0 06 12 
+0050: a0 0f 00 00 02 a0 1f 00 
+0058: 00 00 70 01 30 f0 02 b0 
+0060: 0f 04 00 00 a0 0f 00 00 
+0068: 02 b0 06 12 a0 0f 00 00 
+0070: 02 b0 06 12 a0 0f 00 00 
+0078: 04 30 f0 03 00 00 b0 0f 
+0080: 04 00 00 a0 0f 00 00 05 
+0088: b0 06 12 a0 0f 00 00 19 
+0090: b0 06 12 a0 0f 00 00 06 
+0098: a0 1f 00 00 00 70 01 a0 
+00a0: 00 02 30 f0 01 b0 0f 04 
+00a8: 00 00 a0 0f 04 00 00 a0 
+00b0: 1f 04 00 00 a0 2f 04 00 
+00b8: 00 a0 3f 04 00 00 a0 4f 
+00c0: 04 00 00 a0 5f 04 00 00 
+00c8: a0 6f 04 00 00 00 
+#my_data (22)
+0000: 00 00 00 00 00 00 00 00 
+0008: 00 00 00 00 00 00 00 00 
+0010: 00 00 00 00 00 00 

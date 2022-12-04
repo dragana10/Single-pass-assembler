@@ -1,0 +1,24 @@
+Symbol table
+|ID                  |NAME                |VALUE               |SECTION             |BINDING             |
+|0                   |absolute            |0                   |absolute            |local               |
+|1                   |no section          |0                   |no section          |local               |
+|2                   |mathAdd             |0                   |math                |global              |
+|3                   |mathSub             |13                  |math                |global              |
+|4                   |mathMul             |26                  |math                |global              |
+|5                   |mathDiv             |39                  |math                |global              |
+|6                   |math                |0                   |math                |local               |
+
+Section content
+#absolute (0)
+#no section (0)
+#math (76)
+0000: b0 16 12 a0 06 03 00 04 
+0008: a0 16 03 00 06 70 01 a0 
+0010: 16 42 40 b0 16 12 a0 06 
+0018: 03 00 04 a0 16 03 00 06 
+0020: 71 01 a0 16 42 40 b0 16 
+0028: 12 a0 06 03 00 04 a0 16 
+0030: 03 00 06 72 01 a0 16 42 
+0038: 40 b0 16 12 a0 06 03 00 
+0040: 04 a0 16 03 00 06 73 01 
+0048: a0 16 42 40 

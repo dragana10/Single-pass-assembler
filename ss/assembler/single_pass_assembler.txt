@@ -1,0 +1,391 @@
+NOTES
+
+
+line 1 read '# file: math.s'
+
+line 2 read ''
+
+line 3 read '.global mathAdd, mathSub, mathMul, mathDiv'
+after directive is: #mathAdd, mathSub, mathMul, mathDiv#
+mathAdd, mathSub, mathMul, mathDiv
+this string(mathAdd, mathSub, mathMul, mathDiv) has 4 words
+after remove_spaces_from_string: mathAdd,mathSub,mathMul,mathDiv
+mathAdd
+mathSub
+mathMul
+mathDiv
+
+
+line 4 read ''
+
+line 5 read '.section math'
+after directive is: #math#
+
+line 6 read 'mathAdd:'
+line 6 is only label (mathAdd:)
+label is: mathAdd
+LABEL IS mathAdd
+symbol: absolute is in section: absolute, curr section is: math
+symbol: no section is in section: no section, curr section is: math
+symbol: mathAdd is in section: no section, curr section is: math
+symbol: mathSub is in section: no section, curr section is: math
+symbol: mathMul is in section: no section, curr section is: math
+symbol: mathDiv is in section: no section, curr section is: math
+symbol: math is in section: math, curr section is: math
+
+line 7 read '  push r1'
+name of instruction (m.str(4)) is push
+name of instruction (m.str(4)) is push
+INSTR #10#
+THIS IS PUSH INSTRUCTION
+push r1
+Num of reg in 1-byte instr is: 1
+line 8 read '  ldr r0, [r6 + 4]'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 0
+regD in ldr/str regD is: 0
+  ldr r0, [r6 + 4]
+after remove_spaces_from_string: ldrr0,[r6+4]
+In line: ldrr0,[r6+4] lit/sym is 4
+numerical value from string '4' is: 4 (4)
+ldr r0, [r6 + 4]
+after remove_spaces_from_string: ldrr0,[r6+4]
+In line: ldrr0,[r6+4] reg is r6
+We will find out num of reg from instr: push r6
+push r6
+Num of reg in 1-byte instr is: 6regD, [regS + lit]: 0 6 4
+
+line 9 read '  ldr r1, [r6 + 6]'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 1
+regD in ldr/str regD is: 1
+  ldr r1, [r6 + 6]
+after remove_spaces_from_string: ldrr1,[r6+6]
+In line: ldrr1,[r6+6] lit/sym is 6
+numerical value from string '6' is: 6 (6)
+ldr r1, [r6 + 6]
+after remove_spaces_from_string: ldrr1,[r6+6]
+In line: ldrr1,[r6+6] reg is r6
+We will find out num of reg from instr: push r6
+push r6
+Num of reg in 1-byte instr is: 6regD, [regS + lit]: 1 6 6
+
+line 10 read '  add r0, r1'
+name of instruction (m.str(4)) is add
+name of instruction (m.str(4)) is add
+INSTR #13#
+processing instruction 13
+add r0, r1
+Num of first reg in 2-byte instr is: 0
+add r0, r1
+Num of second reg in 2-byte instr is: 1
+
+line 11 read '  pop r1'
+name of instruction (m.str(4)) is pop
+name of instruction (m.str(4)) is pop
+INSTR #11#
+THIS IS PUSH INSTRUCTION
+pop r1
+Num of reg in 1-byte instr is: 1
+line 12 read '  ret'
+INSTR #5#
+
+line 13 read ''
+
+line 14 read 'mathSub:'
+line 14 is only label (mathSub:)
+label is: mathSub
+LABEL IS mathSub
+symbol: absolute is in section: absolute, curr section is: math
+symbol: no section is in section: no section, curr section is: math
+symbol: mathAdd is in section: math, curr section is: math
+symbol: mathSub is in section: no section, curr section is: math
+symbol: mathMul is in section: no section, curr section is: math
+symbol: mathDiv is in section: no section, curr section is: math
+symbol: math is in section: math, curr section is: math
+
+line 15 read '  push r1'
+name of instruction (m.str(4)) is push
+name of instruction (m.str(4)) is push
+INSTR #10#
+THIS IS PUSH INSTRUCTION
+push r1
+Num of reg in 1-byte instr is: 1
+line 16 read '  ldr r0, [r6 + 4]'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 0
+regD in ldr/str regD is: 0
+  ldr r0, [r6 + 4]
+after remove_spaces_from_string: ldrr0,[r6+4]
+In line: ldrr0,[r6+4] lit/sym is 4
+numerical value from string '4' is: 4 (4)
+ldr r0, [r6 + 4]
+after remove_spaces_from_string: ldrr0,[r6+4]
+In line: ldrr0,[r6+4] reg is r6
+We will find out num of reg from instr: push r6
+push r6
+Num of reg in 1-byte instr is: 6regD, [regS + lit]: 0 6 4
+
+line 17 read '  ldr r1, [r6 + 6]'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 1
+regD in ldr/str regD is: 1
+  ldr r1, [r6 + 6]
+after remove_spaces_from_string: ldrr1,[r6+6]
+In line: ldrr1,[r6+6] lit/sym is 6
+numerical value from string '6' is: 6 (6)
+ldr r1, [r6 + 6]
+after remove_spaces_from_string: ldrr1,[r6+6]
+In line: ldrr1,[r6+6] reg is r6
+We will find out num of reg from instr: push r6
+push r6
+Num of reg in 1-byte instr is: 6regD, [regS + lit]: 1 6 6
+
+line 18 read '  sub r0, r1'
+name of instruction (m.str(4)) is sub
+name of instruction (m.str(4)) is sub
+INSTR #14#
+processing instruction 14
+sub r0, r1
+Num of first reg in 2-byte instr is: 0
+sub r0, r1
+Num of second reg in 2-byte instr is: 1
+
+line 19 read '  pop r1'
+name of instruction (m.str(4)) is pop
+name of instruction (m.str(4)) is pop
+INSTR #11#
+THIS IS PUSH INSTRUCTION
+pop r1
+Num of reg in 1-byte instr is: 1
+line 20 read '  ret'
+INSTR #5#
+
+line 21 read ''
+
+line 22 read 'mathMul:'
+line 22 is only label (mathMul:)
+label is: mathMul
+LABEL IS mathMul
+symbol: absolute is in section: absolute, curr section is: math
+symbol: no section is in section: no section, curr section is: math
+symbol: mathAdd is in section: math, curr section is: math
+symbol: mathSub is in section: math, curr section is: math
+symbol: mathMul is in section: no section, curr section is: math
+symbol: mathDiv is in section: no section, curr section is: math
+symbol: math is in section: math, curr section is: math
+
+line 23 read '  push r1'
+name of instruction (m.str(4)) is push
+name of instruction (m.str(4)) is push
+INSTR #10#
+THIS IS PUSH INSTRUCTION
+push r1
+Num of reg in 1-byte instr is: 1
+line 24 read '  ldr r0, [r6 + 4]'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 0
+regD in ldr/str regD is: 0
+  ldr r0, [r6 + 4]
+after remove_spaces_from_string: ldrr0,[r6+4]
+In line: ldrr0,[r6+4] lit/sym is 4
+numerical value from string '4' is: 4 (4)
+ldr r0, [r6 + 4]
+after remove_spaces_from_string: ldrr0,[r6+4]
+In line: ldrr0,[r6+4] reg is r6
+We will find out num of reg from instr: push r6
+push r6
+Num of reg in 1-byte instr is: 6regD, [regS + lit]: 0 6 4
+
+line 25 read '  ldr r1, [r6 + 6]'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 1
+regD in ldr/str regD is: 1
+  ldr r1, [r6 + 6]
+after remove_spaces_from_string: ldrr1,[r6+6]
+In line: ldrr1,[r6+6] lit/sym is 6
+numerical value from string '6' is: 6 (6)
+ldr r1, [r6 + 6]
+after remove_spaces_from_string: ldrr1,[r6+6]
+In line: ldrr1,[r6+6] reg is r6
+We will find out num of reg from instr: push r6
+push r6
+Num of reg in 1-byte instr is: 6regD, [regS + lit]: 1 6 6
+
+line 26 read '  mul r0, r1'
+name of instruction (m.str(4)) is mul
+name of instruction (m.str(4)) is mul
+INSTR #15#
+processing instruction 15
+mul r0, r1
+Num of first reg in 2-byte instr is: 0
+mul r0, r1
+Num of second reg in 2-byte instr is: 1
+
+line 27 read '  pop r1'
+name of instruction (m.str(4)) is pop
+name of instruction (m.str(4)) is pop
+INSTR #11#
+THIS IS PUSH INSTRUCTION
+pop r1
+Num of reg in 1-byte instr is: 1
+line 28 read '  ret'
+INSTR #5#
+
+line 29 read ''
+
+line 30 read 'mathDiv:'
+line 30 is only label (mathDiv:)
+label is: mathDiv
+LABEL IS mathDiv
+symbol: absolute is in section: absolute, curr section is: math
+symbol: no section is in section: no section, curr section is: math
+symbol: mathAdd is in section: math, curr section is: math
+symbol: mathSub is in section: math, curr section is: math
+symbol: mathMul is in section: math, curr section is: math
+symbol: mathDiv is in section: no section, curr section is: math
+symbol: math is in section: math, curr section is: math
+
+line 31 read '  push r1'
+name of instruction (m.str(4)) is push
+name of instruction (m.str(4)) is push
+INSTR #10#
+THIS IS PUSH INSTRUCTION
+push r1
+Num of reg in 1-byte instr is: 1
+line 32 read '  ldr r0, [r6 + 4]'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 0
+regD in ldr/str regD is: 0
+  ldr r0, [r6 + 4]
+after remove_spaces_from_string: ldrr0,[r6+4]
+In line: ldrr0,[r6+4] lit/sym is 4
+numerical value from string '4' is: 4 (4)
+ldr r0, [r6 + 4]
+after remove_spaces_from_string: ldrr0,[r6+4]
+In line: ldrr0,[r6+4] reg is r6
+We will find out num of reg from instr: push r6
+push r6
+Num of reg in 1-byte instr is: 6regD, [regS + lit]: 0 6 4
+
+line 33 read '  ldr r1, [r6 + 6]'
+name of instruction (m.str(4)) is ldr
+name of instruction (m.str(4)) is ldr
+INSTR #25#
+elmir
+u get_num_of_reg_ldr_str smo
+Num of first reg in ldr/str instr is: 1
+regD in ldr/str regD is: 1
+  ldr r1, [r6 + 6]
+after remove_spaces_from_string: ldrr1,[r6+6]
+In line: ldrr1,[r6+6] lit/sym is 6
+numerical value from string '6' is: 6 (6)
+ldr r1, [r6 + 6]
+after remove_spaces_from_string: ldrr1,[r6+6]
+In line: ldrr1,[r6+6] reg is r6
+We will find out num of reg from instr: push r6
+push r6
+Num of reg in 1-byte instr is: 6regD, [regS + lit]: 1 6 6
+
+line 34 read '  div r0, r1'
+name of instruction (m.str(4)) is div
+name of instruction (m.str(4)) is div
+INSTR #16#
+processing instruction 16
+div r0, r1
+Num of first reg in 2-byte instr is: 0
+div r0, r1
+Num of second reg in 2-byte instr is: 1
+
+line 35 read '  pop r1'
+name of instruction (m.str(4)) is pop
+name of instruction (m.str(4)) is pop
+INSTR #11#
+THIS IS PUSH INSTRUCTION
+pop r1
+Num of reg in 1-byte instr is: 1
+line 36 read '  ret'
+INSTR #5#
+
+line 37 read ''
+
+line 38 read '.end'
+
+line 39 read ''
+EOF at line 
+U BACKPATCHING-U SMO
+EOF at line 39
+
+                                             SIMBOL TABLE
+
+*********************************************************************************************************
+|ID                  NAME                |VALUE               |SECTION             |BINDING             |
+
+|0                   |absolute            |0                   |absolute            |local               |
+
+|1                   |no section          |0                   |no section          |local               |
+
+|2                   |mathAdd             |0                   |math                |global              |
+
+|3                   |mathSub             |13                  |math                |global              |
+
+|4                   |mathMul             |26                  |math                |global              |
+
+|5                   |mathDiv             |39                  |math                |global              |
+
+|6                   |math                |0                   |math                |local               |
+
+
+*********************************************************************************************************
+#absolute (0)
+
+#no section (0)
+
+#math (76)
+0000: b0 16 12 a0 06 03 00 04 
+0008: a0 16 03 00 06 70 01 a0 
+0010: 16 42 40 b0 16 12 a0 06 
+0018: 03 00 04 a0 16 03 00 06 
+0020: 71 01 a0 16 42 40 b0 16 
+0028: 12 a0 06 03 00 04 a0 16 
+0030: 03 00 06 72 01 a0 16 42 
+0038: 40 b0 16 12 a0 06 03 00 
+0040: 04 a0 16 03 00 06 73 01 
+0048: a0 16 42 40 
+
+
+                                       RELOCATION RECORDS
+
+*********************************************************************************************************
+|Section             Offset              |Type                |Name                |Addend              |
+
+
+*********************************************************************************************************
